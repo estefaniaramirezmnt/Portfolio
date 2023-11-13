@@ -1,3 +1,47 @@
+:root {
+    --primary-color: rgb(238, 238, 238);
+    ;
+    --secondary-color: rgb(121, 113, 234);
+    --third-color: #rgb(57, 62, 70);
+    --fourht-color: rgb(34, 40, 49);
+    --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
 body {
     font-family: 'Comfortaa', sans-serif;
+}
+
+.navbar-dark .navbar-brand {
+    font-family: 'Caveat', cursive;
+    margin-left: 20px;
+    padding: 5px 10px 5px 10px;
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--primary-color);
+    opacity: 0.8;
+    border: 1px solid var(--primary-color);
+    border-radius: 2px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    margin: 5px;
+    font-size: large;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.navbar-toggler {
+    margin: 10px;
+}
+
+.navbar-toggler:focus {
+    color: var(--secondary-color);
+}
+
+h1 {
+    margin-top: 100px;
+    margin-left: 15px;
 }
