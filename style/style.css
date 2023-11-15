@@ -8,7 +8,6 @@
 
 body {
     font-family: 'Comfortaa', sans-serif;
-    width: 100%;
 }
 
 .navbar-dark .navbar-brand {
@@ -89,7 +88,7 @@ h3 {
         margin: 0 auto;
         /* Gives that scrolling effect as the typing happens */
         animation:
-            typing 3.5s steps(40, end),
+            typing 5.5s steps(60, end),
             blink-caret .75s step-end infinite;
     }
 
@@ -98,6 +97,7 @@ h3 {
         from {
             width: 0
         }
+
         to {
             width: 100%
         }
@@ -105,10 +105,12 @@ h3 {
 
     /* The typewriter cursor effect */
     @keyframes blink-caret {
+
         from,
         to {
             border-color: transparent
         }
+
         50% {
             border-color: var(--secondary-color)
         }
@@ -120,4 +122,46 @@ h3 {
     display: block;
     margin: 20px auto;
     border-radius: 50%;
+}
+
+main {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    background: var(--fourht-color);
+}
+
+.fa-brands {
+    text-align: center;
+    font-size: 30px;
+    margin-right: 40px;
+    margin-left: 40px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.fa-brands:hover {
+    color: var(--primary-color);
+}
+
+footer p {
+    color: var(--secondary-color);
+
+}
+
+footer .repository-link {
+    color: var(--secondary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+footer .repository-link:hover {
+    color: var(--primary-color);
 }
