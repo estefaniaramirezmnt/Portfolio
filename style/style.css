@@ -128,7 +128,8 @@ main {
 }
 
 .content-homepage {
-    padding: 70px 100px 70px 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     display: block;
     margin: auto;
 }
@@ -137,13 +138,14 @@ main {
     background-color: var(--fourth-color);
     color: var(--primary-color);
     padding: 60px;
+    margin: 10px auto;
     border-radius: 25px;
 }
 
 .weather-app-img,
 .html-img {
     display: block;
-    margin: 10px auto;
+    margin: auto;
     border-radius: 25px;
     width: 500px;
 }
@@ -151,6 +153,13 @@ main {
 .text-card {
     text-align: justify;
     font-weight: 100;
+    font-size: 1.3em;
+}
+
+@media (max-width: 750px) {
+    .text-card {
+        font-size: 1em;
+    }
 }
 
 .button-link {
@@ -158,7 +167,7 @@ main {
     color: var(--primary-color);
     text-decoration: none;
     font-weight: 800;
-    font-size: large;
+    font-size: 1.2em;
     border-radius: 5px;
     padding: 20px;
     transition: all 0.3s ease-in-out;
