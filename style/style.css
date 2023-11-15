@@ -2,7 +2,7 @@
     --primary-color: rgb(238, 238, 238);
     --secondary-color: rgb(121, 113, 234);
     --third-color: rgb(57, 62, 70);
-    --fourht-color: rgb(34, 40, 49);
+    --fourth-color: rgb(34, 40, 49);
     --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -41,7 +41,7 @@ body {
 }
 
 .container-introduction {
-    background-color: var(--fourht-color);
+    background-color: var(--fourth-color);
     color: var(--primary-color);
     padding: 20px;
     padding-bottom: 40px;
@@ -49,7 +49,6 @@ body {
 
 .material-symbols-outlined {
     color: var(--secondary-color);
-
 }
 
 h1,
@@ -76,7 +75,7 @@ h3 {
     letter-spacing: .15em;
 }
 
-@media (min-width: 670px) {
+@media (min-width: 750px) {
     .typewriter h3 {
         max-width: fit-content;
         overflow: hidden;
@@ -88,7 +87,7 @@ h3 {
         margin: 0 auto;
         /* Gives that scrolling effect as the typing happens */
         animation:
-            typing 5.5s steps(60, end),
+            typing 6.5s steps(70, end),
             blink-caret .75s step-end infinite;
     }
 
@@ -118,24 +117,26 @@ h3 {
 }
 
 .portrait {
-    width: 160px;
+    width: 180px;
     display: block;
     margin: 20px auto;
     border-radius: 50%;
 }
 
+main {
+    background-color: var(--primary-color);
+}
+
 .content-homepage {
-    padding: 50px 0px 100px 0px;
-    width: 55%;
+    padding: 70px 100px 70px 100px;
     display: block;
     margin: auto;
 }
 
 .container-info {
-    margin: 30px auto;
-    background-color: var(--fourht-color);
+    background-color: var(--fourth-color);
     color: var(--primary-color);
-    padding: 50px 30px 50px 30px;
+    padding: 60px;
     border-radius: 25px;
 }
 
@@ -144,14 +145,20 @@ h3 {
     display: block;
     margin: 10px auto;
     border-radius: 25px;
-    width: 350px;
+    width: 500px;
+}
+
+.text-card {
+    text-align: justify;
+    font-weight: 100;
 }
 
 .button-link {
     background-color: var(--secondary-color);
     color: var(--primary-color);
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 800;
+    font-size: large;
     border-radius: 5px;
     padding: 20px;
     transition: all 0.3s ease-in-out;
@@ -169,7 +176,7 @@ footer {
     position: relative;
     left: 0;
     bottom: 0;
-    background: var(--fourht-color);
+    background: var(--fourth-color);
 }
 
 .fa-brands {
