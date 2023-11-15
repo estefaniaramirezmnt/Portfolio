@@ -1,7 +1,7 @@
 :root {
     --primary-color: rgb(238, 238, 238);
     --secondary-color: rgb(121, 113, 234);
-    --third-color: #rgb(57, 62, 70);
+    --third-color: rgb(57, 62, 70);
     --fourht-color: rgb(34, 40, 49);
     --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
@@ -124,8 +124,42 @@ h3 {
     border-radius: 50%;
 }
 
-main {
-    margin-bottom: 20px;
+.content-homepage {
+    padding: 50px 0px 100px 0px;
+    width: 55%;
+    display: block;
+    margin: auto;
+}
+
+.container-info {
+    margin: 30px auto;
+    background-color: var(--fourht-color);
+    color: var(--primary-color);
+    padding: 50px 30px 50px 30px;
+    border-radius: 25px;
+}
+
+.weather-app-img,
+.html-img {
+    display: block;
+    margin: 10px auto;
+    border-radius: 25px;
+    width: 350px;
+}
+
+.button-link {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.button-link:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 footer {
