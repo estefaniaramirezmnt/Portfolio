@@ -98,7 +98,6 @@ h3 {
         from {
             width: 0
         }
-
         to {
             width: 100%
         }
@@ -106,12 +105,10 @@ h3 {
 
     /* The typewriter cursor effect */
     @keyframes blink-caret {
-
         from,
         to {
             border-color: transparent
         }
-
         50% {
             border-color: var(--secondary-color)
         }
@@ -119,7 +116,7 @@ h3 {
 }
 
 .portrait {
-    width: 140px;
+    width: 160px;
     display: block;
     margin: 20px auto;
     border-radius: 50%;
