@@ -40,7 +40,8 @@ body {
     color: var(--secondary-color);
 }
 
-.container-introduction {
+.container-introduction,
+.about-header {
     background-color: var(--fourth-color);
     color: var(--primary-color);
     padding: 20px;
@@ -125,6 +126,7 @@ h3 {
 
 main {
     background-color: var(--primary-color);
+    padding-bottom: 50px;
 }
 
 .content-homepage {
@@ -141,6 +143,7 @@ main {
     padding: 60px; /*padding of information card*/
     margin: 10px auto;
     border-radius: 25px;
+    box-shadow: var(--box-shadow);
 }
 
 .container-work h2,
@@ -150,12 +153,6 @@ main {
     font-weight: bold;
 }
 
-/* .info, 
-.img {
-    background-color: red;
-    padding-top: 100px;
-} */
-
 .weather-app-img,
 .html-img {
     display: block;
@@ -163,7 +160,6 @@ main {
     border-radius: 25px;
     width: 450px;
     transition: all 700ms ease-in-out;
-    ;
 }
 
 .weather-app-img:hover,
@@ -275,7 +271,23 @@ footer .repository-link:hover {
 
 }
 @media (max-width: 1200px) {
-    .container-info {
+    .container-blog {
         padding-bottom: 20px;
     }
+}
+
+/*About.html*/
+
+.about-header h1 {
+    margin-top: 120px;
+}
+
+.my-work {
+    margin-top: 40px;
+}
+
+.work-img {
+    margin: 30px;
+    border-radius: 25px;
+    box-shadow: var(--box-shadow);
 }
