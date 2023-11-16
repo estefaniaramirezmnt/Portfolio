@@ -75,7 +75,7 @@ h3 {
     letter-spacing: .15em;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 960px) {
     .typewriter h3 {
         max-width: fit-content;
         overflow: hidden;
@@ -128,25 +128,33 @@ main {
 }
 
 .content-homepage {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 50px; /*distance between content and bottom of header*/
+    padding-bottom: 50px; /*distance between content and top of footer*/
     display: block;
     margin: auto;
 }
 
-.container-info {
+.container-work,
+.container-blog {
     background-color: var(--fourth-color);
     color: var(--primary-color);
-    padding: 60px;
+    padding: 60px; /*padding of information card*/
     margin: 10px auto;
     border-radius: 25px;
 }
 
-.container-info h2 {
+.container-work h2,
+.container-blog h2 {
     color: var(--secondary-color);
     text-decoration: underline;
     font-weight: bold;
 }
+
+/* .info, 
+.img {
+    background-color: red;
+    padding-top: 100px;
+} */
 
 .weather-app-img,
 .html-img {
@@ -170,16 +178,16 @@ main {
     font-size: 1.3em;
 }
 
-@media (max-width: 992px) {
-    .text-card {
-        font-size: 1em;
-    }
-    .weather-app-img {
-        margin-bottom: 30px;
-    }
+.container-link-work {
+    text-align: end;
 }
 
-.button-link {
+.container-link-blog {
+    margin-bottom: 40px;
+}
+
+.button-link-work,
+.button-link-about {
     background-color: var(--secondary-color);
     color: var(--primary-color);
     text-decoration: none;
@@ -197,7 +205,8 @@ main {
 
 footer {
     text-align: center;
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     width: 100%;
     position: relative;
     left: 0;
@@ -231,4 +240,42 @@ footer .repository-link {
 
 footer .repository-link:hover {
     color: var(--primary-color);
+}
+
+@media (max-width: 992px) {
+    .text-card {
+        font-size: 1em;
+        text-align: start;
+    }
+
+    .weather-app-img {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 420px) {
+    .content-homepage {
+        padding-top: 15px;
+    }
+    .container-work,
+    .container-blog {
+        padding: 30px;
+    }
+
+    .container-work {
+        padding-bottom: 0px;
+    }
+
+    .container-link {
+        display: block;
+        margin: auto;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+}
+@media (max-width: 1200px) {
+    .container-info {
+        padding-bottom: 20px;
+    }
 }
