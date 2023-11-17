@@ -329,7 +329,7 @@ footer .repository-link-footer:hover {
 .work-info-text p {
     margin-bottom: 30px;
     letter-spacing: .1rem;
-    font-size: 20px;
+    font-size: 1.1rem;
 }
 
 .work-img,
@@ -438,6 +438,8 @@ hr {
 }
 
 .blog-description p {
+    letter-spacing: .1rem;
+    font-size: 1.1rem;
     color: var(--fourth-color);
     margin-bottom: 0;
 }
@@ -529,7 +531,9 @@ hr {
     .blog-container {
         margin: 30px;
     }
-
+    .blog-description p {
+        font-size: 0.8rem;
+    }
     .article {
         margin: 20px;
     }
