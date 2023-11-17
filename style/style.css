@@ -230,7 +230,7 @@ footer {
 
 footer p {
     color: var(--secondary-color);
-
+    margin: 10px;
 }
 
 footer .repository-link-footer {
@@ -446,11 +446,3 @@ footer .repository-link-footer:hover {
     }
 
 }
-
-/* @media (min-width: 992px) and (max-width: 1200px) {
-    About.html
-
-    .work-container p {
-        color: yellow;
-    }
-} */
