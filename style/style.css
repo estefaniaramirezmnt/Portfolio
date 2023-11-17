@@ -130,17 +130,20 @@ main {
 }
 
 .content-homepage {
-    padding-top: 50px; /*distance between content and bottom of header*/
-    padding-bottom: 50px; /*distance between content and top of footer*/
+    padding-top: 50px;
+    /*distance between content and bottom of header*/
+    padding-bottom: 50px;
+    /*distance between content and top of footer*/
     display: block;
     margin: auto;
 }
 
-.container-work,
-.container-blog {
+.container-work-homepage,
+.container-blog-homepage {
     background-color: var(--fourth-color);
     color: var(--primary-color);
-    padding: 60px; /*padding of information card*/
+    padding: 60px;
+    /*padding of information card*/
     margin: 10px auto;
     border-radius: 25px;
     box-shadow: var(--box-shadow);
@@ -183,7 +186,7 @@ main {
 }
 
 .button-link-work,
-.button-link-about {
+.button-link-about{
     background-color: var(--secondary-color);
     color: var(--primary-color);
     text-decoration: none;
@@ -194,7 +197,8 @@ main {
     transition: all 0.3s ease-in-out;
 }
 
-.button-link:hover {
+.button-link-work:hover,
+.button-link-about:hover {
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
@@ -229,12 +233,12 @@ footer p {
 
 }
 
-footer .repository-link {
+footer .repository-link-footer {
     color: var(--secondary-color);
     transition: all 0.3s ease-in-out;
 }
 
-footer .repository-link:hover {
+footer .repository-link-footer:hover {
     color: var(--primary-color);
 }
 
@@ -253,6 +257,7 @@ footer .repository-link:hover {
     .content-homepage {
         padding-top: 15px;
     }
+
     .container-work,
     .container-blog {
         padding: 30px;
@@ -270,6 +275,7 @@ footer .repository-link:hover {
     }
 
 }
+
 @media (max-width: 1200px) {
     .container-blog {
         padding-bottom: 20px;
@@ -282,12 +288,20 @@ footer .repository-link:hover {
     margin-top: 120px;
 }
 
-.my-work {
-    margin-top: 40px;
+.work.container {
+    margin-top: 60px; /*space between title and beginning of content*/
 }
 
 .work-img {
-    margin: 30px;
+    margin: 40px;
     border-radius: 25px;
     box-shadow: var(--box-shadow);
+    width: 350px;
+    transition: all 700ms ease-in-out;
 }
+
+.work-img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
