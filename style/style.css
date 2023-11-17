@@ -214,7 +214,7 @@ footer {
     background: var(--fourth-color);
 }
 
-.fa-brands {
+.brands-footer {
     text-align: center;
     font-size: 30px;
     margin-right: 40px;
@@ -224,7 +224,7 @@ footer {
     transition: all 0.3s ease-in-out;
 }
 
-.fa-brands:hover {
+.brands-footer:hover {
     color: var(--primary-color);
 }
 
@@ -278,7 +278,8 @@ footer .repository-link-footer:hover {
     border-radius: 25px;
 }
 
-.work-title-container-aboutpage h2 {
+.work-title-container-aboutpage h2,
+.contact-container h2 {
     max-width: fit-content;
     background-color: var(--secondary-color);
     color: var(--primary-color);
@@ -295,7 +296,8 @@ footer .repository-link-footer:hover {
     transition: all 700ms ease-in-out;
 }
 
-.work-title-container-aboutpage h2:hover {
+.work-title-container-aboutpage h2:hover,
+.contact-container h2:hover {
     transform: scale(1.1);
     opacity: 0.8;
 }
@@ -377,6 +379,49 @@ hr {
     /* margin-top: 50px; */
     padding: 40px;
 }
+
+.contact-container {
+    padding: 20px;
+    padding-top: 5px;
+    background-color: var(--fourth-color);
+    border-radius: 25px;
+    box-shadow: var(--box-shadow);
+    display: block;
+    margin: auto;
+    width: 70%;
+
+}
+
+.contact-container h2 {
+    margin-top: 30px;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-container p {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.icon-contactpage {
+    color: var(--secondary-color);
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.link-contactpage {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.link-contactpage:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
 /*Media queries*/
 
 @media (max-width: 420px) {
@@ -410,7 +455,8 @@ hr {
         padding: 15px;
     }
 
-    .work-title-container-aboutpage h2 {
+    .work-title-container-aboutpage h2,
+    .contact-container h2 {
         font-size: 1.2rem;
     }
 
@@ -440,9 +486,11 @@ hr {
         padding: 15px;
     }
 
-    .work-title-container-aboutpage h2 {
+    .work-title-container-aboutpage h2,
+    .contact-container h2 {
         font-size: 1.5rem;
     }
+
     .section-container p {
         font-size: 1rem;
     }
