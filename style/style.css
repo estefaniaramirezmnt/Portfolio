@@ -248,13 +248,13 @@ footer .repository-link-footer:hover {
     margin-top: 120px;
 }
 
-.work-container {
+.section-container {
     /* border: 3px solid violet; */
     margin: 40px 30px 50px 30px;
     /*distance between container and end of header and between container and edges of screen*/
 }
 
-.container-cards-aboutpage {
+.container-aboutpage {
     border: 3px solid var(--primary-color);
     /* border: 1px solid red; */
     /*other wise h2 has no margin top with the box shadow*/
@@ -267,7 +267,7 @@ footer .repository-link-footer:hover {
     padding-bottom: 20px;
 }
 
-.work-title-container {
+.work-title-container-aboutpage {
     background-color: var(--fourth-color);
     width: 65%;
     display: block;
@@ -278,7 +278,7 @@ footer .repository-link-footer:hover {
     border-radius: 25px;
 }
 
-.work-title-container h2 {
+.work-title-container-aboutpage h2 {
     max-width: fit-content;
     background-color: var(--secondary-color);
     color: var(--primary-color);
@@ -295,12 +295,12 @@ footer .repository-link-footer:hover {
     transition: all 700ms ease-in-out;
 }
 
-.work-title-container h2:hover {
+.work-title-container-aboutpage h2:hover {
     transform: scale(1.1);
     opacity: 0.8;
 }
 
-.work-title-container p {
+.work-title-container-aboutpage p {
     color: var(--primary-color);
     letter-spacing: .1rem;
     margin-bottom: 0px;
@@ -312,7 +312,7 @@ footer .repository-link-footer:hover {
 .card3-aboutpage {
     /* border: 3px solid green; */
     margin-top: 20px;
-    padding: 20px;
+    padding: 30px;
 }
 
 .work-info-text {
@@ -334,7 +334,8 @@ footer .repository-link-footer:hover {
     font-size: 20px;
 }
 
-.work-img {
+.work-img,
+.hobbies-img {
     display: block;
     margin: auto;
     border-radius: 25px;
@@ -343,7 +344,8 @@ footer .repository-link-footer:hover {
     transition: all 700ms ease-in-out;
 }
 
-.work-img:hover {
+.work-img:hover,
+.hobbies-img:hover {
     transform: scale(1.1);
     opacity: 0.8;
 }
@@ -367,6 +369,14 @@ footer .repository-link-footer:hover {
     color: var(--secondary-color);
 }
 
+hr {
+    color: var(--secondary-color);
+}
+
+.photo-container {
+    /* margin-top: 50px; */
+    padding: 40px;
+}
 /*Media queries*/
 
 @media (max-width: 420px) {
@@ -391,20 +401,20 @@ footer .repository-link-footer:hover {
     }
 
     /*About.html*/
-    .work-container {
+    .section-container {
         margin: 20px;
     }
 
-    .work-title-container {
+    .work-title-container-aboutpage {
         width: 95%;
         padding: 15px;
     }
 
-    .work-title-container h2 {
+    .work-title-container-aboutpage h2 {
         font-size: 1.2rem;
     }
 
-    .work-container p {
+    .section-container p {
         font-size: 0.8rem;
     }
 
@@ -425,15 +435,15 @@ footer .repository-link-footer:hover {
 
     /*About.html*/
 
-    .work-title-container {
+    .work-title-container-aboutpage {
         width: 90%;
         padding: 15px;
     }
 
-    .work-title-container h2 {
+    .work-title-container-aboutpage h2 {
         font-size: 1.5rem;
     }
-    .work-container p {
+    .section-container p {
         font-size: 1rem;
     }
 
