@@ -242,46 +242,6 @@ footer .repository-link-footer:hover {
     color: var(--primary-color);
 }
 
-@media (max-width: 992px) {
-    .text-card-homepage {
-        font-size: 1em;
-        text-align: start;
-    }
-
-    .weather-app-img {
-        margin-bottom: 30px;
-    }
-}
-
-@media (max-width: 420px) {
-    .content-homepage {
-        padding-top: 15px;
-    }
-
-    .container-work,
-    .container-blog {
-        padding: 30px;
-    }
-
-    .container-work {
-        padding-bottom: 0px;
-    }
-
-    .container-link {
-        display: block;
-        margin: auto;
-        margin-bottom: 50px;
-        text-align: center;
-    }
-
-}
-
-@media (max-width: 1200px) {
-    .container-blog {
-        padding-bottom: 20px;
-    }
-}
-
 /*About.html*/
 
 .about-header h1 {
@@ -351,7 +311,7 @@ footer .repository-link-footer:hover {
     padding: 20px;
     padding-bottom: 40px;
     /* border: 3px solid blue; */
-    margin: 40px 40px 0px 40px;
+    margin: 40px 40px 0px 40px; /*margins description card*/
     background-color: var(--fourth-color);
     color: var(--primary-color);
     border-radius: 25px;
@@ -375,9 +335,22 @@ footer .repository-link-footer:hover {
     opacity: 0.8;
 }
 
+/* .container-links-work {
+    border: 3px solid purple;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    align-items: end;
+} */
+
+.button-work,
+.button-blog {
+    border: 3px solid yellow;
+}
 .link-repo,
 .link-web {
     /* border: 2px solid orange; */
+    width: 400px;
     background-color: var(--secondary-color);
     border-radius: 5px;
     color: var(--primary-color);
@@ -386,8 +359,6 @@ footer .repository-link-footer:hover {
     text-decoration: none;
     padding: 20px;
     border-radius: 5px;
-    display: flex;
-    justify-content: center;
     transition: all 0.3s ease-in-out;
 }
 
@@ -395,4 +366,46 @@ footer .repository-link-footer:hover {
 .link-web:hover {
     background-color: var(--primary-color);
     color: var(--secondary-color);
+}
+
+/*Media queries*/
+
+@media (max-width: 992px) {
+    .text-card-homepage {
+        font-size: 1em;
+        text-align: start;
+    }
+
+    .weather-app-img {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 420px) {
+    .content-homepage {
+        padding-top: 15px;
+    }
+
+    .container-work,
+    .container-blog {
+        padding: 30px;
+    }
+
+    .container-work {
+        padding-bottom: 0px;
+    }
+
+    .container-link {
+        display: block;
+        margin: auto;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .container-blog {
+        padding-bottom: 20px;
+    }
 }
