@@ -514,6 +514,7 @@ hr {
 }
 
 .article-container h2 {
+    padding: 20px;
     margin-top: 50px;
 }
 
@@ -542,7 +543,8 @@ hr {
     }
 
     .work-title-container-aboutpage h2,
-    .contact-container h2 {
+    .contact-container h2,
+    .article-container h2 {
         font-size: 1.5rem;
     }
 
@@ -572,6 +574,10 @@ hr {
     .img-Header-container {
         height: 200px;
     }
+
+    .article-container h2 {
+        margin-top: 30px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -585,6 +591,11 @@ hr {
     /*htmlBestPractices.html*/
     .article-container {
         margin: 20px;
+    }
+
+    .article-container h2 {
+        font-size: 1.1rem;
+        margin-top: 30px;
     }
 
 }
@@ -646,9 +657,13 @@ hr {
         font-size: 0.8rem;
     }
 
-
     /*htmlBestPractices.html*/
     .img-Header-container {
         height: 150px;
+    }
+
+    .article-container h2 {
+        font-size: 0.9rem;
+        margin-top: 25px;
     }
 }
