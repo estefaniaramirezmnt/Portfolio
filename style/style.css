@@ -279,7 +279,7 @@ footer .repository-link-footer:hover {
 
 .work-title-container-aboutpage h2,
 .contact-container h2,
-.article-container h2 {
+.articles-container h2 {
     max-width: fit-content;
     background-color: var(--secondary-color);
     color: var(--primary-color);
@@ -465,7 +465,7 @@ hr {
 }
 
 .container-link-article i,
-.content-article i {
+.articles-content i {
     color: var(--secondary-color);
     margin-right: 20px;
 }
@@ -484,7 +484,7 @@ hr {
 }
 
 /*HtmlBestPractises.html*/
-.article-container {
+.articles-container {
     background-color: var(--fourth-color);
     box-shadow: var(--box-shadow);
     border-radius: 25px;
@@ -511,16 +511,16 @@ hr {
     object-fit: cover;
 }
 
-.article-container h2 {
+.articles-container h2 {
     padding: 20px;
     margin-top: 50px;
 }
 
 .text-article {
     display: block;
-    margin: 40px auto;
+    margin: 30px auto;
     width: 70%;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .text-article p {
@@ -531,9 +531,9 @@ hr {
 }
 
 pre {
-    margin-top: 15px;
-    
+    margin-top: 15px;   
 }
+
 .code-snippet {
     margin: 20px;
     box-sizing: border-box;
@@ -581,7 +581,7 @@ p code {
 
     .work-title-container-aboutpage h2,
     .contact-container h2,
-    .article-container h2 {
+    .articles-container h2 {
         font-size: 1.5rem;
     }
 
@@ -604,7 +604,7 @@ p code {
     }
 
     /*htmlBestPractices.html*/
-    .article-container {
+    .articles-container {
         margin: 40px;
     }
 
@@ -612,13 +612,16 @@ p code {
         height: 200px;
     }
 
-    .article-container h2 {
+    .articles-container h2 {
         margin-top: 30px;
+    }
+
+    .text-article p {
+        font-size: 1rem;
     }
 }
 
 @media (max-width: 700px) {
-
     /*Blog.html*/
     .blog-container {
         margin: 20px;
@@ -626,15 +629,28 @@ p code {
     }
 
     /*htmlBestPractices.html*/
-    .article-container {
+    .articles-container {
         margin: 20px;
     }
 
-    .article-container h2 {
+    .articles-container h2 {
         font-size: 1.1rem;
         margin-top: 30px;
     }
 
+    .articles-content {
+        margin: 20px;
+    }
+
+    .text-article {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .code-snippet {
+        margin: 0;
+        width: 100%;
+    }
 }
 
 @media (max-width: 420px) {
@@ -699,8 +715,16 @@ p code {
         height: 150px;
     }
 
-    .article-container h2 {
+    .articles-container h2 {
         font-size: 0.9rem;
         margin-top: 25px;
+    }
+
+    .text-article {
+        width: 100%;
+    }
+
+    .text-article p {
+        font-size: 0.8rem;
     }
 }
