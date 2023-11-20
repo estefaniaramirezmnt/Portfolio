@@ -278,7 +278,8 @@ footer .repository-link-footer:hover {
 }
 
 .work-title-container-aboutpage h2,
-.contact-container h2 {
+.contact-container h2,
+.article-container h2 {
     max-width: fit-content;
     background-color: var(--secondary-color);
     color: var(--primary-color);
@@ -483,6 +484,32 @@ hr {
 
 .link-article a:hover {
     color: var(--secondary-color);
+}
+
+/*HtmlBestPractises.html*/
+.article-container {
+    background-color: var(--fourth-color);
+    box-shadow: var(--box-shadow);
+    border-radius: 25px;
+    color: var(--primary-color);
+    margin: 70px;
+    padding: 20px;
+}
+
+.img-Header-container {
+    max-width: 350px;
+}
+
+.img-htmlHeader {
+    width: 400px;
+}
+
+.article-container h2 {
+    margin-top: 30px;
+}
+
+.article-container .container-link-article {
+    text-align: center;    
 }
 
 /*Media queries*/
