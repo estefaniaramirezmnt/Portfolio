@@ -296,12 +296,6 @@ footer .repository-link-footer:hover {
     transition: all 700ms ease-in-out;
 }
 
-.work-title-container-aboutpage h2:hover,
-.contact-container h2:hover {
-    transform: scale(1.1);
-    opacity: 0.8;
-}
-
 .work-title-container-aboutpage p {
     color: var(--primary-color);
     letter-spacing: .1rem;
