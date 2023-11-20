@@ -464,7 +464,8 @@ hr {
     width: 300px;
 }
 
-.container-link-article i {
+.container-link-article i,
+.content-article i {
     color: var(--secondary-color);
     margin-right: 20px;
 }
@@ -512,10 +513,37 @@ hr {
     margin-top: 50px;
 }
 
-.article-container .container-link-article {
-    text-align: center;
+.text-article {
+    border: 3px solid red;
+    display: block;
+    margin: 40px auto;
+    width: 70%;
+    padding: 20px;
 }
 
+.text-article p {
+    font-size: 1.1rem;
+    letter-spacing: .1rem;
+    text-align: justify;
+    margin: 0px;
+}
+
+pre {
+    margin-top: 15px;
+    
+}
+.code-snippet {
+    box-sizing: border-box;
+    border: 1px solid var(--secondary-color);
+    border-radius: 25px;
+    font-size: 14px;
+    width: 70%;
+    overflow: auto; /* Añade barras de desplazamiento si el contenido es demasiado grande */
+}
+
+p code {
+    color: var(--secondary-color);
+}
 /*Media queries*/
 
 @media (max-width: 992px) {
