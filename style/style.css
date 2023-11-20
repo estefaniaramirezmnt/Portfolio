@@ -127,9 +127,10 @@ h3 {
 }
 
 .content-homepage {
-    padding-top: 50px;
+    width: 60%;
+    padding-top: 20px;
     /*distance between content and bottom of header*/
-    padding-bottom: 50px;
+    padding-bottom: 70px;
     /*distance between content and top of footer*/
     display: block;
     margin: auto;
@@ -139,9 +140,9 @@ h3 {
 .container-blog-homepage {
     background-color: var(--fourth-color);
     color: var(--primary-color);
-    padding: 60px;
-    /*padding of information card-homepage*/
-    margin: 10px auto;
+    padding: 60px; /*padding of information card-homepage*/
+    margin-right: 10px;
+    margin-left: 10px;
     border-radius: 25px;
     box-shadow: var(--box-shadow);
 }
@@ -170,9 +171,8 @@ h3 {
 
 .container-work-homepage p,
 .container-blog-homepage p {
-    text-align: justify;
     font-weight: 100;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     letter-spacing: .1rem;
 }
 
@@ -243,27 +243,20 @@ footer .repository-link-footer:hover {
 }
 
 /*About.html*/
-
 .about-header h1,
 .blog-header h1 {
     margin-top: 120px;
 }
 
-.section-container {
-    margin: 40px 30px 50px 30px;
-    /*distance between container and end of header and between container and edges of screen*/
-}
-
 .container-aboutpage {
-    border: 3px solid var(--primary-color);
+    /* border: 3px solid var(--primary-color); */
     /*other wise h2 has no margin top with the box shadow*/
+    /* box-shadow: var(--box-shadow); */
     background: var(--primary-color);
     color: var(--fourth-color);
-    box-shadow: var(--box-shadow);
     border-radius: 25px;
-    display: block;
-    margin: auto;
-    padding-bottom: 20px;
+    margin: 70px 30px 0px 30px; /*    distance between container and end of header and between container and edges of screen*/
+    padding-bottom: 0px;
 }
 
 .work-title-container-aboutpage {
@@ -377,6 +370,7 @@ hr {
     box-shadow: var(--box-shadow);
     display: block;
     margin: auto;
+    margin-top: 40px;
     margin-bottom: 70px;
     width: 70%;
 }
@@ -392,7 +386,7 @@ hr {
 
 .contact-container p {
     color: var(--primary-color);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .icon-contactpage {
@@ -419,8 +413,12 @@ hr {
     box-shadow: var(--box-shadow);
     border-radius: 25px;
     color: var(--primary-color);
-    margin: 70px;
+    display: block;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
     padding: 40px;
+    width: 70%;
 }
 
 .blog-description {
@@ -531,7 +529,7 @@ hr {
 }
 
 pre {
-    margin-top: 15px;   
+    margin-top: 15px;
 }
 
 .code-snippet {
@@ -541,7 +539,8 @@ pre {
     border-radius: 25px;
     font-size: 14px;
     width: 80%;
-    overflow: auto; /* Añade barras de desplazamiento si el contenido es demasiado grande */
+    overflow: auto;
+    /* Añade barras de desplazamiento si el contenido es demasiado grande */
 }
 
 p code {
@@ -560,13 +559,17 @@ p code {
 }
 
 /*Media queries*/
+@media (max-width: 2000px) {
+    .content-homepage {
+        width: 70%;
+    }
+}
 
 @media (max-width: 992px) {
 
     .container-work-homepage p,
     .container-blog-homepage p {
         font-size: 1rem;
-        text-align: start;
     }
 
     .weather-app-img {
@@ -575,7 +578,7 @@ p code {
 
     /*About.html*/
     .work-title-container-aboutpage {
-        width: 90%;
+        width: 80%;
         padding: 15px;
     }
 
@@ -585,7 +588,7 @@ p code {
         font-size: 1.5rem;
     }
 
-    .section-container p {
+    .container-aboutpage p {
         font-size: 1rem;
     }
 
@@ -599,8 +602,7 @@ p code {
 
     /*Blog.html*/
     .blog-container {
-        margin: 40px;
-        padding: 30px;
+        width: 80%;
     }
 
     /*htmlBestPractices.html*/
@@ -622,12 +624,13 @@ p code {
 }
 
 @media (max-width: 700px) {
-    /*Blog.html*/
-    .blog-container {
-        margin: 20px;
-        padding: 30px;
-    }
 
+    /*Blog.html*/
+    .content-homepage,
+    .blog-container {
+        width: 85%;
+    }
+    
     /*htmlBestPractices.html*/
     .articles-container {
         margin: 20px;
@@ -656,11 +659,12 @@ p code {
 @media (max-width: 420px) {
     .content-homepage {
         padding-top: 15px;
+        width: 90%;
     }
 
     .container-work-homepage,
     .container-blog-homepage {
-        padding: 30px;
+        padding: 20px;
     }
 
     .container-link {
@@ -671,7 +675,7 @@ p code {
     }
 
     /*About.html*/
-    .section-container {
+    .container-aboutpage {
         margin: 20px;
     }
 
@@ -685,7 +689,11 @@ p code {
         font-size: 1.2rem;
     }
 
-    .section-container p {
+    .container-work-homepage p,
+    .container-blog-homepage p,
+    .container-aboutpage p,
+    .blog-description p,
+    .text-article p {
         font-size: 0.8rem;
     }
 
@@ -698,10 +706,6 @@ p code {
     }
 
     /*Blog.html*/
-    .blog-description p {
-        font-size: 0.8rem;
-    }
-
     .article {
         margin: 20px;
     }
@@ -722,9 +726,5 @@ p code {
 
     .text-article {
         width: 100%;
-    }
-
-    .text-article p {
-        font-size: 0.8rem;
     }
 }
