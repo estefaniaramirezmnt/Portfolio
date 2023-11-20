@@ -59,7 +59,6 @@ h1,
 h2,
 h3 {
     text-align: center;
-
 }
 
 h1 {
@@ -147,8 +146,8 @@ h3 {
     box-shadow: var(--box-shadow);
 }
 
-.container-work h2,
-.container-blog h2 {
+.container-work-homepage h2,
+.container-blog-homepage h2 {
     color: var(--secondary-color);
     text-decoration: underline;
     font-weight: bold;
@@ -309,9 +308,7 @@ footer .repository-link-footer:hover {
     font-size: 1.1rem;
 }
 
-.card1-aboutpage,
-.card2-aboutpage,
-.card3-aboutpage {
+.card-aboutpage {
     margin-top: 20px;
     padding: 30px;
 }
@@ -395,6 +392,7 @@ hr {
 
 .contact-info {
     text-align: center;
+    letter-spacing: .1rem;
 }
 
 .contact-container p {
@@ -449,8 +447,10 @@ hr {
 .article {
     margin: 20px;
     display: flex;
-    align-items: center; /* Centrar verticalmente */
-    justify-content: center; /* Centrar horizontalmente */
+    align-items: center;
+    /* Centrar verticalmente */
+    justify-content: center;
+    /* Centrar horizontalmente */
 }
 
 .img-blog {
@@ -464,7 +464,8 @@ hr {
 .container-link-article {
     margin-left: 20px;
     display: flex;
-    align-items: center; /* Centrar verticalmente */
+    align-items: center;
+    /* Centrar verticalmente */
     width: 300px;
 }
 
@@ -473,13 +474,14 @@ hr {
     margin-right: 20px;
 }
 
-.link-article a{
+.link-article a {
     display: inline;
     color: var(--primary-color);
+    letter-spacing: .1rem;
     transition: all 0.3s ease-in-out;
 }
 
-.container-link-article a:hover {
+.link-article a:hover {
     color: var(--secondary-color);
 }
 
@@ -490,13 +492,9 @@ hr {
         padding-top: 15px;
     }
 
-    .container-work,
-    .container-blog {
+    .container-work-homepage,
+    .container-blog-homepage {
         padding: 30px;
-    }
-
-    .container-work {
-        padding-bottom: 0px;
     }
 
     .container-link {
@@ -533,9 +531,11 @@ hr {
     .blog-container {
         margin: 30px;
     }
+
     .blog-description p {
         font-size: 0.8rem;
     }
+
     .article {
         margin: 20px;
     }
@@ -546,6 +546,7 @@ hr {
 }
 
 @media (max-width: 650px) {
+
     /*Blog.html*/
     .blog-container {
         margin: 20px;
@@ -554,7 +555,9 @@ hr {
 }
 
 @media (max-width: 992px) {
-    .text-card-homepage {
+
+    .container-work-homepage p,
+    .container-blog-homepage p {
         font-size: 1rem;
         text-align: start;
     }
