@@ -497,13 +497,14 @@ hr {
 }
 
 .img-Header-container {
-    background-color: black;
+    background: linear-gradient(179deg, rgb(8, 13, 22) 0%, rgb(6, 11, 19) 50%, rgb(3, 7, 18) 100%);
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     height: 300px;
-    overflow: hidden; /* To hide the overflowing part of the img */
+    overflow: hidden;
+    /* To hide the overflowing part of the img */
 }
-    
+
 .img-htmlHeader {
     height: 105%;
     width: 70%;
@@ -521,6 +522,72 @@ hr {
 }
 
 /*Media queries*/
+
+@media (max-width: 992px) {
+
+    .container-work-homepage p,
+    .container-blog-homepage p {
+        font-size: 1rem;
+        text-align: start;
+    }
+
+    .weather-app-img {
+        margin-bottom: 30px;
+    }
+
+    /*About.html*/
+    .work-title-container-aboutpage {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .work-title-container-aboutpage h2,
+    .contact-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .section-container p {
+        font-size: 1rem;
+    }
+
+    .work-info-text {
+        padding-bottom: 40px;
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    /*Blog.html*/
+    .blog-container {
+        margin: 40px;
+        padding: 30px;
+    }
+
+    /*htmlBestPractices.html*/
+    .article-container {
+        margin: 40px;
+    }
+
+    .img-Header-container {
+        height: 200px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    /*Blog.html*/
+    .blog-container {
+        margin: 20px;
+        padding: 30px;
+    }
+
+    /*htmlBestPractices.html*/
+    .article-container {
+        margin: 20px;
+    }
+
+}
 
 @media (max-width: 420px) {
     .content-homepage {
@@ -567,10 +634,6 @@ hr {
     }
 
     /*Blog.html*/
-    .blog-container {
-        margin: 30px;
-    }
-
     .blog-description p {
         font-size: 0.8rem;
     }
@@ -582,49 +645,10 @@ hr {
     .container-link-article a {
         font-size: 0.8rem;
     }
-}
 
-@media (max-width: 650px) {
 
-    /*Blog.html*/
-    .blog-container {
-        margin: 20px;
-        padding: 30px;
-    }
-}
-
-@media (max-width: 992px) {
-
-    .container-work-homepage p,
-    .container-blog-homepage p {
-        font-size: 1rem;
-        text-align: start;
-    }
-
-    .weather-app-img {
-        margin-bottom: 30px;
-    }
-
-    /*About.html*/
-    .work-title-container-aboutpage {
-        width: 90%;
-        padding: 15px;
-    }
-
-    .work-title-container-aboutpage h2,
-    .contact-container h2 {
-        font-size: 1.5rem;
-    }
-
-    .section-container p {
-        font-size: 1rem;
-    }
-
-    .work-info-text {
-        padding-bottom: 40px;
-        width: 70%;
-        display: block;
-        margin: 0 auto;
-        margin-top: 30px;
+    /*htmlBestPractices.html*/
+    .img-Header-container {
+        height: 150px;
     }
 }
