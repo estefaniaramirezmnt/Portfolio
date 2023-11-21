@@ -480,6 +480,10 @@ hr {
     color: var(--secondary-color);
 }
 
+#blog-footer {
+    position: fixed;
+}
+
 /*HtmlBestPractises.html*/
 .articles-container {
     background-color: var(--fourth-color);
