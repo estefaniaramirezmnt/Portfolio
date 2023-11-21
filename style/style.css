@@ -581,12 +581,27 @@ li span {
     border-top-right-radius: 25px;
     height: 300px;
     overflow: hidden;
-    /* To hide the overflowing part of the img */
 }
 
 .img-cssHeader {
     height: 105%;
-    width: 70%;
+    display: block;
+    margin: auto;
+    object-fit: contain;
+}
+
+/*jsBestPractices.html*/
+.img-jsHeader-container {
+    background: #393452;
+    /* background: #251834; */
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.img-jsHeader {
+    height: 105%;
     display: block;
     margin: auto;
     object-fit: contain;
@@ -649,7 +664,8 @@ li span {
     }
 
     .img-Header-container,
-    .img-cssHeader-container {
+    .img-cssHeader-container,
+    .img-jsHeader-container {
         height: 200px;
     }
 
