@@ -60,23 +60,18 @@
         <h2>HTML best practises</h2>
         <section class="articles-content">
             <div class="text-article">
-                <div>
-                    <p><i class="fa-solid fa-code"></i>Always Declare a Doctype</p>
-                    <pre><code class="language-html code-snippet">
+                <p><i class="fa-solid fa-code"></i>Always Declare a Doctype</p>
+                <pre><code class="language-html code-snippet">
 &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
                 </code></pre>
-                </div>
-                <div>
-                    <p><i class="fa-solid fa-code"></i>Use only one <code>&lt;h1&gt;</code> element for each code sheet
-                    </p>
-                    <pre><code class="language-html code-snippet">
+                <p><i class="fa-solid fa-code"></i>Use only one <code>&lt;h1&gt;</code> element for each code sheet
+                </p>
+                <pre><code class="language-html code-snippet">
 &lt;h1&gt;This is the only H1 of this page&lt;/h1&gt;
                     </code></pre>
-                </div>
-                <div>
-                    <p><i class="fa-solid fa-code"></i>Use an Unordered List <code>&lt;ul&gt;</code> for Navigation</p>
-                    <pre><code class="language-html code-snippet">
+                <p><i class="fa-solid fa-code"></i>Use an Unordered List <code>&lt;ul&gt;</code> for Navigation</p>
+                <pre><code class="language-html code-snippet">
 &lt;nav&gt;
     &lt;ul&gt;
         &lt;li&gt;&lt;a href=&quot;index.html&quot;&gt;HOME&lt;/a&gt;&lt;/li&gt;
@@ -85,21 +80,19 @@
         &lt;li&gt;&lt;a href=&quot;contact.html&quot;&gt;CONTACT ME&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
 &lt;/nav&gt;
-                    </code></pre>
-                </div>
-                <div>
-                    <p><i class="fa-solid fa-code"></i>Code with SEO in mind</p>
-                    <ul>
-                        <li><span>Add meaningfull and appropiate tagle tags, as it helps search engines index and rank
-                                the page accurately, improving visibility in search results</span></li>
-                        <li><span>Use alt attributes for images. This is also very important for accessibility</span>
-                        </li>
-                        <li><span>Include a descriptive meta description that describes briefly the content of the
-                                page</span></li>
-                        <li><span>Add title attribute to anchor tag, improves the accesibility and increases the
-                                usability of the page, that's why it must be a significant value</span></li>
-                    </ul>
-                    <pre><code class="language-html code-snippet">
+                </code></pre>
+                <p><i class="fa-solid fa-code"></i>Code with SEO in mind</p>
+                <ul>
+                    <li><span>Add meaningfull and appropiate tagle tags, as it helps search engines index and rank
+                            the page accurately, improving visibility in search results</span></li>
+                    <li><span>Use alt attributes for images. This is also very important for accessibility</span>
+                    </li>
+                    <li><span>Include a descriptive meta description that describes briefly the content of the
+                            page</span></li>
+                    <li><span>Add title attribute to anchor tag, improves the accesibility and increases the
+                            usability of the page, that's why it must be a significant value</span></li>
+                </ul>
+                <pre><code class="language-html code-snippet">
 &lt;title&gt;Nia Ramírez Portfolio&lt;/title&gt;
 
 &lt;img src=&quot;/img/portrait.png&quot; alt=&quot;Nia Ramírez portrait&quot; class=&quot;portrait&quot;&gt;
@@ -107,25 +100,21 @@
 &lt;meta name=&quot;description&quot; content=&quot;Nia Ramírez portfolio, front-end developer. Notes, thoughts and interests&quot; /&gt;
 
 &lt;a href=&quot;/blog.html&quot; title=&quot;Learn with my blog&quot;&gt;My blog&lt;/a&gt;
-                    </code></pre>
-                </div>
-                <div>
-                    <p><i class="fa-solid fa-code"></i>Use <code>&lt;div&gt;&lt;/div&gt;</code> to group your content
-                        into major sections with similar meanings</p>
-                    <pre><code class="language-html code-snippet">
+                </code></pre>
+                <p><i class="fa-solid fa-code"></i>Use <code>&lt;div&gt;&lt;/div&gt;</code> to group your content
+                    into major sections with similar meanings</p>
+                <pre><code class="language-html code-snippet">
 &lt;div class=&quot;card-container&quot;&gt;
     &lt;div class=&quot;card-content&quot;&gt;                       
-                    </code></pre>
-                    <p>But don't use <code>&lt;div&gt;&lt;/div&gt;</code> for
-                        everything. It's important to determinante, depending on the code, when they are necessary or
-                        not. Maybe they can be eliminated and the result is the same than with them</p>
-                </div>
-                <div>
-                    <p><i class="fa-solid fa-code"></i>There are some other tags that can be used instead of
-                        <code>&lt;div&gt;&lt;/div&gt;</code>
-                        and that group the content in a more semantic way. For example:
-                    </p>
-                    <pre><code class="language-html code-snippet">
+                </code></pre>
+                <p>But don't use <code>&lt;div&gt;&lt;/div&gt;</code> for
+                    everything. It's important to determinante, depending on the code, when they are necessary or
+                    not. Maybe they can be eliminated and the result is the same than with them</p>
+                <p><i class="fa-solid fa-code"></i>There are some other tags that can be used instead of
+                    <code>&lt;div&gt;&lt;/div&gt;</code>
+                    and that group the content in a more semantic way. For example:
+                </p>
+                <pre><code class="language-html code-snippet">
 &lt;header&gt;
     &lt;h1&gt;Title&lt;/h1&gt;
 &lt;/header&gt;
@@ -136,53 +125,41 @@
     &lt;!-- content here, for example, media links --&gt;
 &lt;/footer&gt;
                 </code></pre>
-                </div>
-                <div>
-                    <p><i class="fa-solid fa-code"></i>Don't put block elements within inline elements.
-                        <code>&lt;div&gt;</code>, <code>&lt;h1&gt;</code>-<code>&lt;h1&gt;</code> and
-                        <code>&lt;p&gt;</code> are block elements. <br />
-                        <code>&lt;span&gt;</code> or <code>&lt;a&gt;</code> are inline elements. <br />
-                        So don't do this:
-                    </p>
-                    <pre><code class="language-html code-snippet">
+                <p><i class="fa-solid fa-code"></i>Don't put block elements within inline elements.
+                    <code>&lt;div&gt;</code>, <code>&lt;h1&gt;</code>-<code>&lt;h1&gt;</code> and
+                    <code>&lt;p&gt;</code> are block elements. <br />
+                    <code>&lt;span&gt;</code> or <code>&lt;a&gt;</code> are inline elements. <br />
+                    So don't do this:
+                </p>
+                <pre><code class="language-html code-snippet">
 &lt;a href=&quot;#&quot;&gt;
     &lt;p&gt;Visit this web&lt;/p&gt;
 &lt;/a&gt;
-                    </code></pre>
-                    <p>Instead, do this:</p>
-                    <pre><code class="language-html code-snippet">
+                </code></pre>
+                <p>Instead, do this:</p>
+                <pre><code class="language-html code-snippet">
 &lt;p&gt;Visit this web &lt;a href=&quot;#&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-                    </code></pre>
-                </div>
-                <div>
-                    <p><i class="fa-solid fa-code"></i>Always close your tags</p>
-                    <pre><code class="language-html code-snippet">
+                </code></pre>
+                <p><i class="fa-solid fa-code"></i>Always close your tags</p>
+                <pre><code class="language-html code-snippet">
 &lt;p&gt; This is a paragraph without closing tag
                 </code></pre>
-                </div>
-                <div>
-                    <p><i class="fa-solid fa-code"></i>Use lower case markup, it helps the code readability</p>
-                    <pre><code class="language-html code-snippet">
+                <p><i class="fa-solid fa-code"></i>Use lower case markup, it helps the code readability</p>
+                <pre><code class="language-html code-snippet">
 &lt;img /&gt;
 &lt;!--instead of--&gt;
 &lt;IMG /&gt;                      
-                    </code></pre>
-                </div>
-                <div>
-                    <p><i class="fa-solid fa-code"></i>Use external style sheets. This improves code organization, promotes
-                        reusability, accelerates page loading, it's easier to mantain and facilitates global changes, giving
-                        consistency to the code</p>
-                        <pre><code class="language-html code-snippet">
+                </code></pre>
+                <p><i class="fa-solid fa-code"></i>Use external style sheets. This improves code organization, promotes
+                    reusability, accelerates page loading, it's easier to mantain and facilitates global changes, giving
+                    consistency to the code</p>
+                <pre><code class="language-html code-snippet">
 &lt;link rel=&quot;stylesheet&quot; href=&quot;style/style.css&quot;&gt;                   
-                        </code></pre>
-                </div>
-            </div>
+                </code></pre>
         </section>
         <div class="go-back-container">
             <i class="fa-solid fa-arrow-right"></i>
-            <div class="go-back-link">
-                <a href="/blog.html">Go back to post list</a>
-            </div>
+            <a href="/blog.html">Go back to post list</a>
         </div>
     </main>
     <footer>
