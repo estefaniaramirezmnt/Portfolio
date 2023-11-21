@@ -566,10 +566,30 @@ ul {
 ul li {
     margin: 10px;
 }
+
 li span {
     color: var(--primary-color);
     font-size: 1.1rem;
     letter-spacing: .1rem;
+}
+
+
+/*cssBestPractices.html*/
+.img-cssHeader-container {
+    background: #DBD3F8;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    height: 300px;
+    overflow: hidden;
+    /* To hide the overflowing part of the img */
+}
+
+.img-cssHeader {
+    height: 105%;
+    width: 70%;
+    display: block;
+    margin: auto;
+    object-fit: contain;
 }
 
 /*Media queries*/
@@ -628,7 +648,8 @@ li span {
         width: 85%;
     }
 
-    .img-Header-container {
+    .img-Header-container,
+    .img-cssHeader-container {
         height: 200px;
     }
 
@@ -659,7 +680,7 @@ li span {
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 500px) {
     .content-homepage {
         padding-top: 15px;
         width: 90%;
@@ -722,11 +743,6 @@ li span {
     .text-article {
         width: 95%;
     } 
-
-    .img-Header-container {
-        height: 150px;
-    }
-
     .articles-container h2 {
         font-size: 0.9rem;
         margin-top: 25px;
