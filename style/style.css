@@ -171,7 +171,6 @@ h3 {
 
 .container-work-homepage p,
 .container-blog-homepage p {
-    font-weight: 100;
     font-size: 1.1rem;
     letter-spacing: .1rem;
 }
@@ -463,7 +462,7 @@ hr {
 }
 
 .container-link-article i,
-.articles-content i {
+.text-article i {
     color: var(--secondary-color);
     margin-right: 20px;
 }
@@ -487,9 +486,13 @@ hr {
     box-shadow: var(--box-shadow);
     border-radius: 25px;
     color: var(--primary-color);
-    margin: 70px;
-    padding: 0px;
-    padding-bottom: 30px;
+    display: block;
+    margin: 30px auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 80%;
+    /* padding: 0px; */
+    padding-bottom: 40px;
 }
 
 .img-Header-container {
@@ -517,14 +520,13 @@ hr {
 .text-article {
     display: block;
     margin: 30px auto;
-    width: 70%;
+    width: 80%;
     /* padding: 20px; */
 }
 
 .text-article p {
     font-size: 1.1rem;
     letter-spacing: .1rem;
-    text-align: justify;
     margin: 10px;
 }
 
@@ -539,7 +541,7 @@ pre {
     border-radius: 25px;
     font-size: 14px;
     width: 70%;
-    overflow: auto;
+    overflow: hidden;
 }
 
 p code {
@@ -600,7 +602,9 @@ li span {
         font-size: 1.5rem;
     }
 
-    .container-aboutpage p {
+    .container-aboutpage p,
+    .text-article p,
+    li span {
         font-size: 1rem;
     }
 
@@ -618,8 +622,10 @@ li span {
     }
 
     /*htmlBestPractices.html*/
-    .articles-container {
-        margin: 40px;
+    .articles-container,
+    .text-article,
+    .code-snippet {
+        width: 85%;
     }
 
     .img-Header-container {
@@ -628,11 +634,6 @@ li span {
 
     .articles-container h2 {
         margin-top: 30px;
-    }
-
-    .text-article p,
-    li span {
-        font-size: 1rem;
     }
 }
 
@@ -645,27 +646,16 @@ li span {
     }
     
     /*htmlBestPractices.html*/
-    .articles-container {
-        margin: 20px;
+    .articles-container,
+    .text-article,
+    .code-snippet {
+        width: 90%;
+
     }
 
     .articles-container h2 {
         font-size: 1.1rem;
         margin-top: 30px;
-    }
-
-    .articles-content {
-        margin: 20px;
-    }
-
-    .text-article {
-        width: 90%;
-        padding: 10px;
-    }
-
-    .code-snippet {
-        margin: 0;
-        width: 100%;
     }
 }
 
@@ -729,6 +719,10 @@ li span {
     }
 
     /*htmlBestPractices.html*/
+    .text-article {
+        width: 95%;
+    } 
+
     .img-Header-container {
         height: 150px;
     }
@@ -736,9 +730,5 @@ li span {
     .articles-container h2 {
         font-size: 0.9rem;
         margin-top: 25px;
-    }
-
-    .text-article {
-        width: 100%;
     }
 }
