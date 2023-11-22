@@ -59,28 +59,99 @@
         </div>
         <h2>JS best practises</h2>
         <section class="text-article">
-                <p><i class="fa-solid fa-code"></i></p>
-                <pre><code class="language-html code-snippet">
+            <p><i class="fa-solid fa-code"></i>Use <code>===</code> Instead of <code>==</code><br />
+                <code>==</code> this is the <span>abstract equality operator</span>. If the operands are of different
+                types,
+                JavaScript will try to convert one or both operands to a common type before making the comparison.
+                <br />
+                <code>===</code> This is the <span>strict equality operator</span>, it always considers operands of
+                different types to be different. <br />
+                <span>Note:</span> it's the same with the <span>inequality operator</span>
+            </p>
+            <pre><code class="language-js code-snippet">
+// abstract equality operator
+2 == "2" // true
+// strict equality operator
+2 === "2" // false
+
+// abstract inequality operator
+2 != "2" // false
+// strict inequality operator
+2 !== "2" // true
+            </code></pre>
+            <p><i class="fa-solid fa-code"></i>Name variables and functions in a <span>descriptive</span> way that gives
+                information about what
+                the variable or function represents or stores, making the code more understandable, especially when
+                working with a team</p>
+            <pre><code class="language-js code-snippet">
+// non descriptive
+let x = 25;
+
+// descriptive
+let numberOfStudents = 25;
+            </code></pre>
+            <p><i class="fa-solid fa-code"></i><span>Comment</span> the code, which it will make the code more readbale
+                and it will
+                be easy to understand, providing additional context, explain the purpose of the code, or clarify
+                something
+                that might not be obvious
+            </p>
+            <pre><code class="language-js code-snippet">
+// Calculate the total price including tax
+const calculateTotalPrice = (price, taxRate) => {
+    // Ensure the tax rate is in decimal form
+    const taxMultiplier = 1 + (taxRate / 100);
+
+    const totalPrice = price * taxMultiplier;
+
+    return totalPrice;
+};
+            </code></pre>
+            <p><i class="fa-solid fa-code"></i>Put the JavaScript code in a <span>different file</span> and...</p>
+            <p><i class="fa-solid fa-code"></i>Code the script at the <span>bottom of your HTML</span></p>
+            <pre><code class="language-html code-snippet">
+    &lt;!-- ...content --&gt;
+    &lt;/footer&gt;
+    &lt;script src=&quot;/src/index.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
                 </code></pre>
-                <p><i class="fa-solid fa-code"></i></p>
-                <pre><code class="language-html code-snippet">
+            <p><i class="fa-solid fa-code"></i>Embracing <span>let</span> and <span>const</span> is a best practice in
+                modern JS.
+            <ul>
+                <li><span>
+                        They have block scope, meaning they are only accessible within the block where
+                        they are defined
+                    </span></li>
+                <li><span>
+                        They hey are not initialized until their declaration statement is encountered
+                    </span></li>
+                <li><span>
+                        They can't be redeclared in the same scope. This helps prevent accidental redeclaration, reducing
+                        the risk of naming conflict
+                    </span></li>
+                    <li><span>
+                        Variables declared with const cannot be reassigned, providing additional safety and clarity
+                    </span></li>
+            </ul>They offer block scoping, preventing unintended hoisting and redeclaration issues.</p>
+            <pre><code class="language-js code-snippet">
+// let
+let x = 10;
+x = 20; // Valid
+
+// const
+const y = 30;
+// y = 40; // Error: Assignment to constant variable
+
+// var (avoided in modern JavaScript)
+var z = 50;
+var z = 60; // No error, but generally considered poor practice
+            </code></pre>
+            <p><i class="fa-solid fa-code"></i>Error handling</p>
+            <pre><code class="language-js code-snippet">
                 </code></pre>
-                <p><i class="fa-solid fa-code"></i></p>
-                <pre><code class="language-html code-snippet">
-                </code></pre>
-                <p><i class="fa-solid fa-code"></i></p>
-                <pre><code class="language-html code-snippet">
-                </code></pre>
-                <p><i class="fa-solid fa-code"></i></p>
-                <pre><code class="language-html code-snippet">
-                </code></pre>
-                <p><i class="fa-solid fa-code"></i></p>
-                <pre><code class="language-html code-snippet">
-                </code></pre>
-                <p><i class="fa-solid fa-code"></i></p>
-                <pre><code class="language-html code-snippet">
-                </code></pre>                <p><i class="fa-solid fa-code"></i></p>
-                <pre><code class="language-html code-snippet">
+            <p><i class="fa-solid fa-code"></i>Testing and quality assurance</p>
+            <pre><code class="language-js code-snippet">
                 </code></pre>
         </section>
         <div class="go-back-container">
