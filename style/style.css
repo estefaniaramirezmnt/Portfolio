@@ -575,6 +575,7 @@ span span {
 .go-back-container {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .go-back-container i {
