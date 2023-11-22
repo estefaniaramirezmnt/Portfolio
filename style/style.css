@@ -458,14 +458,14 @@ hr {
     margin: auto;
     text-align: center;
     border-radius: 25px;
-    width: 150px;
+    width: 140px;
 }
 
 .container-link-article {
     margin-left: 20px;
     display: flex;
     align-items: center; /* Centrar verticalmente */
-    width: 300px;
+    width: 400px;
 }
 
 .container-link-article i,
@@ -476,7 +476,7 @@ hr {
 
 .container-link-article a,
 .go-back-container a {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     display: inline;
     color: var(--primary-color);
     letter-spacing: .1rem;
@@ -633,6 +633,7 @@ p span {
     .container-work-homepage p,
     .container-blog-homepage p,
     .container-aboutpage p,
+    .container-link-article a,
     .text-article p,
     li span,
     .code-snippet  {
@@ -745,6 +746,7 @@ p span {
     .container-blog-homepage p,
     .container-aboutpage p,
     .blog-description p,
+    .container-link-article a,
     .text-article p,
     li span,
     .code-snippet {
@@ -767,10 +769,6 @@ p span {
     .blog-description {
         margin: 10px;
         padding: 20px;
-    }
-
-    .container-link-article a {
-        font-size: 0.8rem;
     }
 
     /*htmlBestPractices.html*/
