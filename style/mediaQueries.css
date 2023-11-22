@@ -5,6 +5,12 @@
     }
 }
 
+@media (max-width: 1500px) {
+    .work-info-text {
+        width: 90%;
+    }
+}
+
 @media (max-width: 992px) {
 
     .container-work-homepage p,
