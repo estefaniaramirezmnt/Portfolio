@@ -635,6 +635,7 @@ p span {
     .container-blog-homepage p,
     .container-aboutpage p,
     .container-link-article a,
+    .go-back-container a, 
     .text-article p,
     li span,
     .code-snippet  {
@@ -748,6 +749,7 @@ p span {
     .container-aboutpage p,
     .blog-description p,
     .container-link-article a,
+    .go-back-container a, 
     .text-article p,
     li span,
     .code-snippet {
