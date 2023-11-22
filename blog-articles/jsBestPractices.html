@@ -171,7 +171,7 @@ try {
                         TDD is a practice that consists on creating the unit tests before writing the actual code. <br />
                         It helps to chatch bugs and issues, reduce errors and promotes writing modular and testable code</p>
                 <pre><code class="language-js code-snippet">
-// Simple test made with Jest
+// Unit tests made with Jest
 const { default: TestRunner} = require("jest-runner");
 const bonusTime = require(`./bonusTime`);
 
@@ -180,15 +180,33 @@ test('if true, return the value plus 10, if false only the value', () => {
     expect(bonusTime(200, false)).toBe('€200');
 })
 
+test('if salary is not a number, return a message', () => {
+    expect(bonusTime('1000', true)).toBe('Parameters must be a number and a boolean');
+})
+
+test('if bonus is not a boolean, return a message', () => {
+    expect(bonusTime(1000, 'true')).toBe('Parameters must be a number and a boolean');
+})
+
+test('if salary is negative, return a message', () => {
+    expect(bonusTime(-1, true)).toBe('Salary must be a positive number');
+})
+
 // Code
-function bonusTime2(salary, bonus) {
-    if (bonus === true) {
-        return salary * 10;
+function BonusTime(salary, hasBonus) {
+    if (typeof(salary) !== "number" || typeof(hasBonus) !== "boolean" ) {
+        return 'Parameters must be a number and a boolean';
+    }
+    if (salary < 0) {
+        return 'Salary must be a positive number';
+    }
+    if (hasBonus === true) {
+        return `€${salary  * 10}`;
     } else {
-        return salary;
+        return `€${salary}`;
     }
 }
-module.exports = bonusTime;
+module.exports = BonusTime;
                 </code></pre>
             </section>
             <div class="go-back-container">
