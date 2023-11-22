@@ -628,15 +628,6 @@ p span {
     object-fit: contain;
 }
 
-/*Media queries*/
-/* @media (min-width: 20000px) {
-    .blog-footer {
-        position: absolute;
-        bottom: 0px;
-        width: 100%;
-    }
-} */
-
 @media (max-width: 2000px) {
     .content-homepage {
         width: 70%;

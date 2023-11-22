@@ -23,42 +23,43 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand fw-bold" href="/index.html">
-                Nia Ramírez
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about.html">About me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/blog.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about.html#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <div class="blog-header">
-        <h1>Blog</h1>
-    </div>
-    <main class="articles-container">
-        <div class="img-Header-container">
-            <img src="/img/htmlHeader.jpg" class="img-htmlHeader">
+    <div class="main-container">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <a class="navbar-brand fw-bold" href="/index.html">
+                    Nia Ramírez
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">About me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="blog-header">
+            <h1>Blog</h1>
         </div>
-        <h2>HTML best practises</h2>
-        <section class="text-article">
+        <main class="articles-container">
+            <div class="img-Header-container">
+                <img src="/img/htmlHeader.jpg" class="img-htmlHeader">
+            </div>
+            <h2>HTML best practises</h2>
+            <section class="text-article">
                 <p><i class="fa-solid fa-code"></i>Always Declare a <span>Doctype</span></p>
                 <pre><code class="language-html code-snippet">
 &lt;!DOCTYPE html&gt;
@@ -82,13 +83,17 @@
                 </code></pre>
                 <p><i class="fa-solid fa-code"></i>Code with <span>SEO</span> in mind</p>
                 <ul>
-                    <li><span>Add meaningfull and appropiate <span>title tag</span>, it helps search engines index and rank
+                    <li><span>Add meaningfull and appropiate <span>title tag</span>, it helps search engines index and
+                            rank
                             the page accurately, improving visibility in search results</span></li>
-                    <li><span>Use <span>alt attributes</span> for images. This is also very important for accessibility</span>
+                    <li><span>Use <span>alt attributes</span> for images. This is also very important for
+                            accessibility</span>
                     </li>
-                    <li><span>Include a descriptive <span>meta description</span> that describes briefly the content of the
+                    <li><span>Include a descriptive <span>meta description</span> that describes briefly the content of
+                            the
                             page</span></li>
-                    <li><span>Add <span>title attribute to anchor tag</span>, improves the accesibility and increases the
+                    <li><span>Add <span>title attribute to anchor tag</span>, improves the accesibility and increases
+                            the
                             usability of the page, that's why it must be a significant value</span></li>
                 </ul>
                 <pre><code class="language-html code-snippet">
@@ -125,7 +130,8 @@
     &lt;!-- content here, for example, media links --&gt;   
 &lt;/footer&gt;
                 </code></pre>
-                <p><i class="fa-solid fa-code"></i>Don't put block elements within inline elements. <code>&lt;div&gt;</code>, <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code> and
+                <p><i class="fa-solid fa-code"></i>Don't put block elements within inline elements.
+                    <code>&lt;div&gt;</code>, <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code> and
                     <code>&lt;p&gt;</code> are block elements. <br />
                     <code>&lt;span&gt;</code> or <code>&lt;a&gt;</code> are inline elements. <br />
                     So don't do this:
@@ -149,32 +155,34 @@
 &lt;!--instead of--&gt;
 &lt;IMG /&gt;                      
                 </code></pre>
-                <p><i class="fa-solid fa-code"></i>Use <span>external style sheets</span>. This improves code organization, promotes
+                <p><i class="fa-solid fa-code"></i>Use <span>external style sheets</span>. This improves code
+                    organization, promotes
                     reusability, accelerates page loading, it's easier to mantain and facilitates global changes, giving
                     consistency to the code</p>
                 <pre><code class="language-html code-snippet">
 &lt;link rel=&quot;stylesheet&quot; href=&quot;style/style.css&quot;&gt;   
                 </code></pre>
-        </section>
-        <div class="go-back-container">
-            <i class="fa-solid fa-arrow-right"></i>
-            <a href="/blog.html">Go back to post list</a>
-        </div>
-    </main>
-    <footer>
-        <p>
-            © 2023 | Coded by Nia Ramírez, <a href="https://github.com/estefaniaramirezmnt/Portfolio" target="_blank"
-                class="repository-link-footer">open source</a> portfolio
-        </p>
-        <div>
-            <a href="https://github.com/estefaniaramirezmnt" target="_blank"><i
-                    class="fa-brands fa-github brands-footer"></i></a>
-            <a href="https://www.linkedin.com/in/estefan%C3%ADa-ram%C3%ADrez-monta%C3%B1o-921048283/" target="_blank"><i
-                    class="fa-brands fa-linkedin-in brands-footer"></i></a>
-            <a href="https://www.instagram.com/niaramirez_/" target="_blank"><i
-                    class="fa-brands fa-instagram brands-footer"></i>
-            </a>
-    </footer>
+            </section>
+            <div class="go-back-container">
+                <i class="fa-solid fa-arrow-right"></i>
+                <a href="/blog.html">Go back to post list</a>
+            </div>
+        </main>
+        <footer>
+            <p>
+                © 2023 | Coded by Nia Ramírez, <a href="https://github.com/estefaniaramirezmnt/Portfolio"
+                    target="_blank" class="repository-link-footer">open source</a> portfolio
+            </p>
+            <div>
+                <a href="https://github.com/estefaniaramirezmnt" target="_blank"><i
+                        class="fa-brands fa-github brands-footer"></i></a>
+                <a href="https://www.linkedin.com/in/estefan%C3%ADa-ram%C3%ADrez-monta%C3%B1o-921048283/"
+                    target="_blank"><i class="fa-brands fa-linkedin-in brands-footer"></i></a>
+                <a href="https://www.instagram.com/niaramirez_/" target="_blank"><i
+                        class="fa-brands fa-instagram brands-footer"></i>
+                </a>
+        </footer>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
