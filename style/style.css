@@ -760,6 +760,12 @@ p span {
     }
 
     /*htmlBestPractices.html*/
+    .img-Header-container,
+    .img-cssHeader-container,
+    .img-jsHeader-container {
+        height: 150px;
+    }
+
     .text-article {
         width: 95%;
     } 
