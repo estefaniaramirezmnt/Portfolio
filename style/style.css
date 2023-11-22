@@ -547,7 +547,7 @@ pre {
     border: 1px solid var(--secondary-color);
     border-radius: 25px;
     width: 80%;
-    overflow: scroll;
+    overflow: auto;
 }
 
 p code {
