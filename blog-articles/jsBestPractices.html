@@ -154,11 +154,41 @@ const y = 30;
 var z = 50;
 var z = 60; // No error, but generally considered poor practice
             </code></pre>
-                <p><i class="fa-solid fa-code"></i>Error handling</p>
+                <p><i class="fa-solid fa-code"></i>Code with <span>error handling</span> in order to anticipate, detect
+                    and prevent unexpected errors.</p>
                 <pre><code class="language-js code-snippet">
+try {
+    // Code that may throw an error
+    const result = functionName();
+} catch (error) {
+    // Handle the error
+    console.error(`Oops! An error occurred: ${error.message}`);
+    // Handle the error
+}
                 </code></pre>
-                <p><i class="fa-solid fa-code"></i>Testing and quality assurance</p>
+                <p><i class="fa-solid fa-code"></i>Create <span> unit tests</span> following <span>Test-Driven
+                        Development</span> (TDD). Unit test consists on test small pieces of code, like functions or methods. <br />
+                        TDD is a practice that consists on creating the unit tests before writing the actual code. <br />
+                        It helps to chatch bugs and issues, reduce errors and promotes writing modular and testable code</p>
                 <pre><code class="language-js code-snippet">
+// Simple test made with Jest
+const { default: TestRunner} = require("jest-runner");
+const bonusTime = require(`./bonusTime`);
+
+test('if true, return the value plus 10, if false only the value', () => {
+    expect(bonusTime(1000, true)).toBe('€10000');
+    expect(bonusTime(200, false)).toBe('€200');
+})
+
+// Code
+function bonusTime2(salary, bonus) {
+    if (bonus === true) {
+        return salary * 10;
+    } else {
+        return salary;
+    }
+}
+module.exports = bonusTime;
                 </code></pre>
             </section>
             <div class="go-back-container">
