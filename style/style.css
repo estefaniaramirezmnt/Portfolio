@@ -538,7 +538,7 @@ pre {
     border: 1px solid var(--secondary-color);
     border-radius: 25px;
     width: 70%;
-    overflow: hidden;
+    overflow: auto;
 }
 
 p code {

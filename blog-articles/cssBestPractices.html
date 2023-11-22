@@ -60,9 +60,7 @@
         <h2>CSS best practises</h2>
         <section class="text-article">
 
-            <p><i class="fa-solid fa-code"></i>Use a <span>fallback font</span>. Different web browsers and operating
-                systems may
-                have varying default fonts and rendering engines. By specifying a fallback font in your CSS, you can
+            <p><i class="fa-solid fa-code"></i>Use a <span>fallback font</span>. By doing this you can
                 ensure that even if a user's system doesn't have the preferred font, the browser will use the fallback
                 font instead</p>
             <pre><code class="language-css code-snippet">
@@ -93,7 +91,7 @@ li a {
     text-decoration: none;
 }
             </code></pre>
-            <p><i class="fa-solid fa-code"></i>Use CSS <span>Shorthand</span>. Shorthand properties allow you to
+            <p><i class="fa-solid fa-code"></i>Use CSS <span>Shorthand</span>. This allows you to
                 put multiple individual properties in a single line, making your CSS more concise and readable. You can
                 use Shorthand with margins, paddings, borders, background, font, among others</p>
             <pre><code class="language-css code-snippet">
@@ -112,7 +110,8 @@ h1 {
             </code></pre>
             <p><i class="fa-solid fa-code"></i>Keep it organized and consistent. Once you have your HTML, you can write
                 your CSS from top to bottom of the website. Also, when you start naming your clases, try too be
-                consistent all over your files. It's also a good practice put a line of separation between selectors</p>
+                consistent all over your files. <br />
+                It's also a good practice put a line of separation between selectors</p>
             <pre><code class="language-css code-snippet">
 body {
     /* Content here*/
@@ -134,14 +133,17 @@ footer {
     /* Content here*/
 }
             </code></pre>
-            <p><i class="fa-solid fa-code"></i>Use <span>separate stylesheets</span> for big projects. If you have different sections
-                in your page with completely different styles you can create several stylesheets. This way you won't have to scroll for ever</p>
+            <p><i class="fa-solid fa-code"></i>Use <span>separate stylesheets</span> for big projects. If you have
+                different sections
+                in your page with completely different styles you can create several stylesheets. This way you won't
+                have to scroll for ever</p>
             <pre><code class="language-html code-snippet">
 &lt;link rel=&quot;stylesheet&quot; href=&quot;style/index.css&quot;&gt;
 &lt;link rel=&quot;stylesheet&quot; href=&quot;style/gallery.css&quot;&gt;
 &lt;link rel=&quot;stylesheet&quot; href=&quot;style/contact.css&quot;&gt;   
             </code></pre>
-            <p><i class="fa-solid fa-code"></i>Use <span>comments</span> to make the file more readable and understandable. You can
+            <p><i class="fa-solid fa-code"></i>Use <span>comments</span> to make the file more readable and
+                understandable. You can
                 write comments to divide sections or explain certain decisions</p>
             <pre><code class="language-css code-snippet">
 /*Index.html css*/
@@ -150,10 +152,11 @@ footer {
 
 /*Media queries*/
             </code></pre>
-            <p><i class="fa-solid fa-code"></i>It's important to know the differences between classes and IDs.
+            <p><i class="fa-solid fa-code"></i>It's important to know the differences between classes and IDs. <br />
                 <span>Classes</span> are more versatile and can be applied to multiple elements, while
-                <span>IDs</span> are meant to unique and can only be used once per page. IDs also have higher specificity, which can affect the
-                order in which styles are applied when there are conflicting rules. <br />
+                <span>IDs</span> are meant to unique and can only be used once per page. <br />
+                IDs also have higher specificity, which can affect the order in which styles are applied when there are
+                conflicting rules. <br />
                 It's recommended to use classes for styling and reserve IDs for unique identifiers or JavaScript
                 interactions
             </p>
