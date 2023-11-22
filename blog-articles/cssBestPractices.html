@@ -59,29 +59,124 @@
         </div>
         <h2>CSS best practises</h2>
         <section class="text-article">
-                <p><i class="fa-solid fa-code"></i></p>
-                <pre><code class="language-html code-snippet">
-                </code></pre>
-                <p><i class="fa-solid fa-code"></i></p>
-                <pre><code class="language-html code-snippet">
-                </code></pre>
-                <p><i class="fa-solid fa-code"></i></p>
-                <pre><code class="language-html code-snippet">
-                </code></pre>
-                <p><i class="fa-solid fa-code"></i></p>
-                <pre><code class="language-html code-snippet">
-                </code></pre>
-                <p><i class="fa-solid fa-code"></i></p>
-                <pre><code class="language-html code-snippet">
-                </code></pre>
-                <p><i class="fa-solid fa-code"></i></p>
-                <pre><code class="language-html code-snippet">
-                </code></pre>
-                <p><i class="fa-solid fa-code"></i></p>
-                <pre><code class="language-html code-snippet">
-                </code></pre>                <p><i class="fa-solid fa-code"></i></p>
-                <pre><code class="language-html code-snippet">
-                </code></pre>
+
+            <p><i class="fa-solid fa-code"></i>Use a <span>fallback font</span>. Different web browsers and operating
+                systems may
+                have varying default fonts and rendering engines. By specifying a fallback font in your CSS, you can
+                ensure that even if a user's system doesn't have the preferred font, the browser will use the fallback
+                font instead</p>
+            <pre><code class="language-css code-snippet">
+body {
+    font-family: 'Comfortaa', sans-serif;
+}
+            </code></pre>
+            <p><i class="fa-solid fa-code"></i>Use the DRY method: <span>Don't repeat yourself</span>. Try to evoid
+                redundancies or repeating the same code. You can combine elements with same properties too</p>
+            <pre><code class="language-css code-snippet">
+h1, h2, h3 {
+    font-family: 'Caveat', cursive;
+    color: blueviolet;
+}
+            </code></pre>
+            <p><i class="fa-solid fa-code"></i>Avoid being too specific writing selectors, maybe there is no need to
+                have extra selectors</p>
+            <pre><code class="language-css code-snippet">
+/* Instead this: */
+div ul li a {
+    color: pink;
+    text-decoration: none;
+}
+
+/* You can write this: */
+li a {
+    color: pink;
+    text-decoration: none;
+}
+            </code></pre>
+            <p><i class="fa-solid fa-code"></i>Use CSS <span>Shorthand</span>. Shorthand properties allow you to
+                put multiple individual properties in a single line, making your CSS more concise and readable. You can
+                use Shorthand with margins, paddings, borders, background, font, among others</p>
+            <pre><code class="language-css code-snippet">
+/* Instead doing this */
+h1 {
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+/* You can do this */
+h1 {
+    margin: 10px 5px 15px 10px;
+}
+            </code></pre>
+            <p><i class="fa-solid fa-code"></i>Keep it organized and consistent. Once you have your HTML, you can write
+                your CSS from top to bottom of the website. Also, when you start naming your clases, try too be
+                consistent all over your files. It's also a good practice put a line of separation between selectors</p>
+            <pre><code class="language-css code-snippet">
+body {
+    /* Content here*/
+}
+
+h1 {
+    /* Content here*/
+}
+
+h2 {
+    /* Content here*/
+}
+
+main {
+    /* Content here*/
+}
+
+footer {
+    /* Content here*/
+}
+            </code></pre>
+            <p><i class="fa-solid fa-code"></i>Use separate stylesheets for big projects. If you have different sections
+                in your page with completely different styles you can create several stylesheets. This way you won't have to scroll for ever</p>
+            <pre><code class="language-html code-snippet">
+&lt;link rel=&quot;stylesheet&quot; href=&quot;style/index.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;style/gallery.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;style/contact.css&quot;&gt;   
+            </code></pre>
+            <p><i class="fa-solid fa-code"></i>Use comments to make the file more readable and understandable. You can
+                write comments to divide sections or explain certain decisions</p>
+            <pre><code class="language-css code-snippet">
+/*Index.html css*/
+
+/*About.html css*/
+
+/*Media queries*/
+            </code></pre>
+            <p><i class="fa-solid fa-code"></i>It's important to know the differences between classes and IDs.
+                <span>Classes</span> are more versatile and can be applied to multiple elements, while
+                <span>IDs</span> are meant to unique and can only be used once per page. IDs also have higher specificity, which can affect the
+                order in which styles are applied when there are conflicting rules. <br />
+                It's recommended to use classes for styling and reserve IDs for unique identifiers or JavaScript
+                interactions
+            </p>
+            <pre><code class="language-css code-snippet">
+/* CSS */
+.class {
+    /* content here */
+}
+
+#id {
+    /*content here*/
+}
+            </code></pre>
+            <pre><code class="language-html code-snippet">
+&lt;!--HTML--&gt;
+&lt;!--Multiple elements with same class--&gt;
+&lt;div class=&quot;container&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;container&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;container&quot;&gt;&lt;/div&gt;
+
+&lt;!--One single element with one unique ID, although it can have other classes too--&gt;   
+&lt;div id=&quot;contact-page&quot; class=&quot;container&quot;&gt;&lt;/div&gt;
+            </code></pre>
         </section>
         <div class="go-back-container">
             <i class="fa-solid fa-arrow-right"></i>

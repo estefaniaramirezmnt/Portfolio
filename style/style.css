@@ -590,6 +590,10 @@ li span {
     object-fit: contain;
 }
 
+p span {
+    color: var(--secondary-color);
+}
+
 /*jsBestPractices.html*/
 .img-jsHeader-container {
     background: #393452;
