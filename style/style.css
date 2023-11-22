@@ -8,7 +8,6 @@
 
 body {
     font-family: 'Comfortaa', sans-serif;
-    width: 100%;
     background-color: var(--primary-color);
 }
 
@@ -207,10 +206,12 @@ footer {
     padding-top: 50px;
     padding-bottom: 50px;
     width: 100%;
-    position: relative;
-    left: 0;
+    /* position: relative; */
     bottom: 0;
     background: var(--fourth-color);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .brands-footer {
@@ -232,12 +233,12 @@ footer p {
     margin: 10px;
 }
 
-footer .repository-link-footer {
+.repository-link-footer {
     color: var(--secondary-color);
     transition: all 0.3s ease-in-out;
 }
 
-footer .repository-link-footer:hover {
+.repository-link-footer:hover {
     color: var(--primary-color);
 }
 
@@ -406,6 +407,13 @@ hr {
 }
 
 /*Blog.html*/
+.main-container {
+    min-height: 100vh; /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 180px; /*height of your footer */
+}
 
 .blog-container {
     background-color: var(--fourth-color);
@@ -421,11 +429,12 @@ hr {
 }
 
 .blog-description {
+    width: 80%;
     background-color: var(--primary-color);
     border-radius: 25px;
     display: block;
     margin: 30px auto;
-    padding: 30px;
+    padding: 40px;
     text-align: center;
 }
 
@@ -450,7 +459,7 @@ hr {
     margin: auto;
     text-align: center;
     border-radius: 25px;
-    width: 100px;
+    width: 150px;
 }
 
 .container-link-article {
@@ -468,6 +477,7 @@ hr {
 
 .container-link-article a,
 .go-back-container a {
+    font-size: 1.3rem;
     display: inline;
     color: var(--primary-color);
     letter-spacing: .1rem;
@@ -478,6 +488,12 @@ hr {
 .go-back-container a:hover {
     color: var(--secondary-color);
 }
+
+/* .blog-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+} */
 
 /*HtmlBestPractises.html*/
 .articles-container {
@@ -613,6 +629,14 @@ p span {
 }
 
 /*Media queries*/
+/* @media (min-width: 20000px) {
+    .blog-footer {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+    }
+} */
+
 @media (max-width: 2000px) {
     .content-homepage {
         width: 70%;
