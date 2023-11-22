@@ -37,7 +37,9 @@ body {
     margin: 10px;
 }
 
-.navbar-toggler:focus {
+.navbar-toggler:focus,
+.material-symbols-outlined,
+hr {
     color: var(--secondary-color);
 }
 
@@ -48,10 +50,6 @@ body {
     color: var(--primary-color);
     padding: 20px;
     padding-bottom: 40px;
-}
-
-.material-symbols-outlined {
-    color: var(--secondary-color);
 }
 
 h1,
@@ -208,13 +206,10 @@ footer p {
 }
 
 .container-aboutpage {
-    /* border: 3px solid var(--primary-color); */
-    /*other wise h2 has no margin top with the box shadow*/
-    /* box-shadow: var(--box-shadow); */
     background: var(--primary-color);
     color: var(--fourth-color);
     border-radius: 25px;
-    margin: 70px 30px 0px 30px; /*    distance between container and end of header and between container and edges of screen*/
+    margin: 70px 30px 0px 30px; /*distance between container and end of header and between container and edges of screen*/
     padding-bottom: 0px;
 }
 
@@ -312,10 +307,6 @@ footer p {
     color: var(--secondary-color);
 }
 
-hr {
-    color: var(--secondary-color);
-}
-
 .photo-container {
     /* margin-top: 50px; */
     padding: 40px;
@@ -371,7 +362,7 @@ hr {
     overflow: hidden;
     display: block;
     position: relative;
-    padding-bottom: 180px; /*height of your footer */
+    padding-bottom: 180px; /*height of  footer */
 }
 
 .blog-container {
@@ -407,9 +398,7 @@ hr {
     margin: 20px;
     display: flex;
     align-items: center;
-    /* Centrar verticalmente */
     justify-content: center;
-    /* Centrar horizontalmente */
 }
 
 .img-blog {
@@ -423,7 +412,7 @@ hr {
 .container-link-article {
     margin-left: 20px;
     display: flex;
-    align-items: center; /* Centrar verticalmente */
+    align-items: center; /* Vertically centered */
     width: 400px;
 }
 
@@ -509,11 +498,9 @@ pre {
     overflow: auto;
 }
 
-p code {
-    color: var(--secondary-color);
-}
-
-ul {
+p code,
+ul,
+span span {
     color: var(--secondary-color);
 }
 
@@ -525,10 +512,6 @@ li span {
     color: var(--primary-color);
     font-size: 1.1rem;
     letter-spacing: .1rem;
-}
-
-span span {
-    color: var(--secondary-color);
 }
 
 .go-back-container {
@@ -544,7 +527,8 @@ span span {
 }
 
 /*cssBestPractices.html*/
-.img-cssHeader-container {
+.img-cssHeader-container,
+.img-jsHeader-container {
     background: #DBD3F8;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -552,7 +536,8 @@ span span {
     overflow: hidden;
 }
 
-.img-cssHeader {
+.img-cssHeader,
+.img-jsHeader {
     height: 105%;
     display: block;
     margin: auto;
@@ -563,21 +548,7 @@ p span {
     color: var(--secondary-color);
 }
 
-
 /*jsBestPractices.html*/
 .img-jsHeader-container {
     background: #393452;
-    /* background: #251834; */
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    height: 300px;
-    overflow: hidden;
 }
-
-.img-jsHeader {
-    height: 105%;
-    display: block;
-    margin: auto;
-    object-fit: contain;
-}
-
