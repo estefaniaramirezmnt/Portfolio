@@ -43,6 +43,14 @@ hr {
     color: var(--secondary-color);
 }
 
+.main-container {
+    min-height: 100vh; /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 180px; /*height of  footer */
+}
+
 .container-introduction,
 .about-header,
 .blog-header {
@@ -358,14 +366,6 @@ footer p {
 }
 
 /*Blog.html*/
-.main-container {
-    min-height: 100vh; /* will cover the 100% of viewport */
-    overflow: hidden;
-    display: block;
-    position: relative;
-    padding-bottom: 180px; /*height of  footer */
-}
-
 .blog-container {
     background-color: var(--fourth-color);
     box-shadow: var(--box-shadow);
