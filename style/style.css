@@ -264,22 +264,22 @@ footer p {
 }
 
 .work-info-text {
-    width: 70%;
+    align-items: center;
+    color: var(--primary-color);
+    background-color: var(--fourth-color);
+    border-radius: 25px;
     margin: 0px auto;
     margin-top: 30px;
-    display: block;
-    text-align: center;
     padding: 20px;
-    padding-bottom: 40px;
-    background-color: var(--fourth-color);
-    color: var(--primary-color);
-    border-radius: 25px;
+    text-align: center;
+    width: 70%;
 }
 
 .work-info-text p {
-    margin-bottom: 30px;
     letter-spacing: .1rem;
     font-size: 1.1rem;
+    margin: 0px;
+    margin-top: 10px;
 }
 
 .work-img,
@@ -299,20 +299,16 @@ footer p {
 }
 
 .link-web {
-    width: 400px;
-    background-color: var(--secondary-color);
-    border-radius: 5px;
-    color: var(--primary-color);
-    font-weight: 800;
-    font-size: 1.2rem;
-    text-decoration: none;
-    padding: 20px;
-    border-radius: 5px;
+    color: var(--secondary-color);
+    font-size: 1.4rem;
     transition: all 0.3s ease-in-out;
 }
 
 .link-web:hover {
-    background-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.link-web:visited {
     color: var(--secondary-color);
 }
 
