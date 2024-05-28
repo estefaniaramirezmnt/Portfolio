@@ -63,6 +63,6 @@ If you would like to contribute to this project, please follow these steps:
 
 ## Overview
 
-![Screenshoot of About Me section](./img/aboutMeScreenshoot.png)
+![Screenshoot of About Me section](./img/aboutMeScreenshot.png)
 
-![Screenshoot of Blog section](./img/blogScreenshoot.png)
+![Screenshoot of Blog section](./img/blogScreenshot.png)
